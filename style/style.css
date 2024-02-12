@@ -19,13 +19,19 @@ header {
     background-color: #0157A0;
 }
 
+img{
+    height: 100%;
+}
+
 h1 {
     margin: 1rem;
     
 }
 
-main{
 
+
+
+main{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +47,14 @@ main{
 .title{
     padding: 10px;
     text-align: center;
+}
+
+.parraf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
 }
 
 #visitas{
@@ -60,6 +74,17 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 animation: mover 2.5s infinite linear;
+}
+
+a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
 }
 
 @keyframes  mover {
