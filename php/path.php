@@ -1,7 +1,7 @@
     <?php
 
     // Ruta del archivo JSON
-    $rutaArchivo = './datos.json';
+    $rutaArchivo = '../datos.json';
 
     // Leer el contenido del archivo JSON
     $contenido = file_get_contents($rutaArchivo);

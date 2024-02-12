@@ -20,7 +20,7 @@ function readAndWrite() {
 
 function update() {
   // Realizar una solicitud Fetch al archivo PHP
-  fetch("./path.php")
+  fetch("../php/path.php")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Error al modificar JSON");
