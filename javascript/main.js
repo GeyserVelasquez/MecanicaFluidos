@@ -1,5 +1,5 @@
 function readAndWrite() {
-  fetch("JSON/datos.json")
+  fetch("./JSON/datos.json")
     .then((response) => {
       // Verificamos si la respuesta es exitosa (código de estado 200)
       if (!response.ok) {
@@ -23,7 +23,7 @@ function readAndWrite() {
 
 function update() {
   // Realizar una solicitud Fetch al archivo PHP
-  fetch("php/path.php")
+  fetch("./php/path.php")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Error al modificar JSON");
