@@ -14,22 +14,47 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     background-color: #0157A0;
+    overflow: visible;
+    color: white;
+}
+
+#logo{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 img{
     height: 100%;
+    border: #0157A0 2.5px solid;
 }
 
-h1 {
-    margin: 1rem;
-    
+h1{
+    margin: 10px;
 }
 
+h2{
+    margin: 40px;
+}
 
+h3{
+    font-size: xx-large;
+    margin: 10px;
+}
 
+h4{
+    margin: 15px;
+}
 
 main{
     width: 90%;
@@ -74,6 +99,18 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 animation: mover 2.5s infinite linear;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+
+audio {
+    margin: 0px 20px;
+    height: 40px;
 }
 
 a{

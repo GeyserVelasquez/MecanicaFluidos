@@ -56,13 +56,6 @@ ol{
     margin-right: 50px ;
 }
 
-#inicio::after{
-    display: inline-block;
-    content: "";
-    background-color: black;
-    width: 50px;
-    height: 100%;
-}
 
 ol li {
     list-style: none;
@@ -117,4 +110,24 @@ h4{
 
 .ejercicios{
     width: 50%;
+}
+
+#container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    border: #0157A0 2.5px solid;
+}
+
+#container2{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+.ocho{
+    margin: 0px 10px;
+    border: none;
 }
