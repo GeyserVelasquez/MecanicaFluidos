@@ -1,7 +1,7 @@
     <?php
 
     // Ruta del archivo JSON
-    $rutaArchivo = 'JSON/datos.json';
+    $rutaArchivo = './datos.json';
 
     // Leer el contenido del archivo JSON
     $contenido = file_get_contents($rutaArchivo);
@@ -19,6 +19,8 @@
 
     // Escribir los datos actualizados en el archivo JSON
     file_put_contents($rutaArchivo, $datosActualizados);
+
+    echo $visitas;
 
     ?>
 

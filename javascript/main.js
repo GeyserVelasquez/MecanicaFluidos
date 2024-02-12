@@ -1,5 +1,5 @@
 function readAndWrite() {
-  fetch("./JSON/datos.json")
+  fetch("datos.json")
     .then((response) => {
       // Verificamos si la respuesta es exitosa (código de estado 200)
       if (!response.ok) {
@@ -11,10 +11,7 @@ function readAndWrite() {
     .then((data) => {
       // Aquí 'data' contendrá el objeto JavaScript obtenido del archivo JSON
       console.log(data);
-      let div = document.createElement("div");
-      div.id = "visitas";
-      div.innerHTML = "Numero de visitas: " + data.visitas;
-      document.body.appendChild(div);
+      
     })
     .catch((error) => {
       console.error("Error al leer el archivo JSON:", error);
@@ -23,7 +20,7 @@ function readAndWrite() {
 
 function update() {
   // Realizar una solicitud Fetch al archivo PHP
-  fetch("./php/path.php")
+  fetch("./path.php")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Error al modificar JSON");
@@ -31,6 +28,11 @@ function update() {
       return response.text();
     })
     .then((data) => {
+      console.log(data);
+      let div = document.createElement("div");
+      div.id = "visitas";
+      div.innerHTML = "Numero de visitas: " + data;
+      document.body.appendChild(div);
       console.log("exitoso"); // Mensaje de éxito del PHP
     })
     .catch((error) => {
@@ -40,5 +42,5 @@ function update() {
 
 update();
 
-readAndWrite();
+// readAndWrite();
 
